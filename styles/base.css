@@ -56,6 +56,9 @@ main {
     max-width: 1200px;
     margin: 0 auto; /* This centers the entire block */
     padding: 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
 }
 
 h2 {

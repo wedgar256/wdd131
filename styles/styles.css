@@ -23,12 +23,6 @@ nav a:hover {
     text-decoration: underline;
 }
 
-main {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 20px;
-}
-
 .card {  
     background-color: white;
     display: block;
