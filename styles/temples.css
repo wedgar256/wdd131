@@ -1,4 +1,8 @@
 /* temples.css - Card Component Styling */
+nav {
+    display: flex;
+}
+
 figure {
     margin: 0;
     background: white;
