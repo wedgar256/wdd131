@@ -29,19 +29,32 @@ header {
 nav {
     background-color: var(--nav-bg);
     display: flex;
+    justify-content: center;
+    width: 100%;
 }
 
 .navigation {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
+    gap: 6px;
     align-items: center;
+    width: 100%;
+    max-width: none;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.navigation li {
+    flex: 1;
 }
 
 .navigation a {
     display: block;
+    width: 100%;
     color: white;
     text-decoration: none;
-    padding: 1rem;
+    padding: 0.85rem 0.9rem;
     text-align: center;
     font-weight: bold;
     transition: 0.3s;
@@ -57,9 +70,6 @@ main {
     max-width: 1200px;
     margin: 0 auto; /* This centers the entire block */
     padding: 20px;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 20px;
 }
 
 h2 {
@@ -68,9 +78,10 @@ h2 {
     margin-bottom: 20px;
 }
 
-/* Gallery - Mobile First (1 Column) */
+/* Gallery - Mobile First */
 .gallery {
     display: grid;
-    grid-template-columns: 1fr; 
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
     gap: 20px;
+    justify-items: center;
 }
