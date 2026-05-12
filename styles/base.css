@@ -28,6 +28,7 @@ header {
 /* Navigation - Mobile First */
 nav {
     background-color: var(--nav-bg);
+    display: flex;
 }
 
 .navigation {
