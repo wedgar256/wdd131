@@ -75,15 +75,38 @@ ul {
     list-style-position: inside;
 }
 
+/* Container: Handles layout, spacing, and the top border line */
 footer {
-    text-align: left;   /* moved to the left */
-    margin-top: 40px;
-    padding-top: 20px;
-    border-top: 1px solid #ddd;
-    color: #666;
+  display: flex;
+  justify-content: space-between; 
+  align-items: center;
+  margin-top: 40px;
+  padding-top: 20px;
+  border-top: 1px solid #ddd;
+  color: black;
 }
 
-/* Responsive adjustments */
+
+.footer p {
+  margin: 0; /* Removes default paragraph spacing */
+  text-align: left;
+}
+
+
+.footer-icons {
+  display: flex;
+  gap: 15px; /* Sets even spacing between multiple icons */
+  align-items: center;
+}
+
+/* The SVGs: Ensures they stay sharp and scale down responsively */
+.footer-icons svg {
+  width: 100%;
+  max-width: 24px; /* Set this to your preferred icon pixel size (e.g., 24px - 32px) */
+  height: auto;
+  fill: currentColor; /* Forces SVGs to inherit the 'black' text color automatically */
+}
+
 @media (max-width: 768px) {
     main {
         grid-template-columns: 1fr;

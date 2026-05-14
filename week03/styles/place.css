@@ -1,0 +1,43 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f4f4f4;
+}
+
+/* Header */
+header {
+  background: #1f4e79;
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+
+/* Hero */
+.hero img {
+  width: 100%;
+  height: auto;
+}
+
+/* Info Section */
+.info {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  padding: 20px;
+}
+
+/* Weather */
+.weather {
+  background: white;
+  margin: 20px;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+/* Footer */
+footer {
+  background: #333;
+  color: white;
+  text-align: center;
+  padding: 10px;
+}
