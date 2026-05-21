@@ -1,11 +1,10 @@
-// Static values (assignment style)
-const temp = 28; // Celsius
-const windSpeed = 10; // km/h
+const temp = 8; // Celsius (must be <= 10 for formula to work)
+const windSpeed = 15; 
 
 document.getElementById("temp").textContent = temp;
 document.getElementById("wind").textContent = windSpeed;
 
-// Wind chill calculation
+// Wind Chill Function (REQUIRED)
 function calculateWindChill(t, v) {
   return (
     13.12 +
@@ -15,15 +14,16 @@ function calculateWindChill(t, v) {
   ).toFixed(2);
 }
 
-// Apply logic
+// Apply condition
 let chill = "N/A";
+
 if (temp <= 10 && windSpeed > 4.8) {
   chill = calculateWindChill(temp, windSpeed) + " °C";
 }
 
 document.getElementById("chill").textContent = chill;
 
-// Footer
+// Footer dynamic values
 document.getElementById("year").textContent = new Date().getFullYear();
 document.getElementById("lastModified").textContent =
   "Last Modified: " + document.lastModified;
