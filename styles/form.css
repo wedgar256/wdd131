@@ -62,8 +62,7 @@ label {
 
 select,
 input[type="date"],
-input[type="text"],
-textarea {
+input[type="text"] {
     width: 100%;
     padding: 1rem;
     font-size: 1rem;
@@ -74,8 +73,15 @@ textarea {
 }
 
 textarea {
-    resize: vertical;
+    width: 100%;
+    padding: 1rem;
+    font-size: 1rem;
+    border: 1px solid #00274d;
+    border-radius: 5px;
+    margin-bottom: 1.5rem;
+    background-color: white;
     min-height: 120px;
+    resize: vertical;
 }
 
 /* ---------- Fieldsets ---------- */
@@ -115,21 +121,19 @@ legend {
 .checkbox-group label {
     display: flex;
     align-items: center;
+    gap: 0.75rem;
     margin-bottom: 0.75rem;
     font-weight: normal;
 }
 
 .checkbox-group input[type="checkbox"] {
-    width: auto;
+    width: 20px;
+    height: 20px;
     margin-right: 0.75rem;
     accent-color: #2E7D32;
 }
 
 /* ---------- Reviewer Name ---------- */
-
-input[type="text"] {
-    margin-bottom: 1.5rem;
-}
 
 /* ---------- Submit Button ---------- */
 
@@ -158,46 +162,6 @@ footer {
     text-align: center;
     padding: 1rem;
     margin-top: 2rem;
-}
-
-/* ---------- Useful Features ---------- */
-
-.checkbox-group label {
-    display: flex;
-    align-items: center;
-    gap: 0.75rem;
-    margin-bottom: 0.75rem;
-    font-weight: normal;
-}
-
-.checkbox-group input[type="checkbox"] {
-    width: 20px;
-    height: 20px;
-    accent-color: #2E7D32;
-}
-
-/* ---------- Written Review ---------- */
-
-textarea {
-    width: 100%;
-    min-height: 120px;
-    padding: 1rem;
-    border: 1px solid #00274d;
-    border-radius: 5px;
-    font-size: 1rem;
-    resize: vertical;
-    margin-bottom: 1.5rem;
-}
-
-/* ---------- User Name ---------- */
-
-input[type="text"] {
-    width: 100%;
-    padding: 1rem;
-    border: 1px solid #00274d;
-    border-radius: 5px;
-    font-size: 1rem;
-    margin-bottom: 1.5rem;
 }
 
 /* ---------- Desktop ---------- */
