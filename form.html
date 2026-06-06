@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Product Review Form">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Wanyama Edgar">
+    <title>Product Review Form</title>
+
+    <link rel="stylesheet" href="styles/form.css">
+    <script src="scripts/getdates.js" defer></script>
+    <script src="scripts/form.js" defer></script>
+</head>
+<body>
+
+<header>
+    <h1>Product Review Form</h1>
+</header>
+
+<main>
+<form>
+   <label for="productName">Product Name</label>
+<select id="productName" name="productName" required>
+    <option value="" disabled selected>Select a Product ...</option>
+    <option value="fc1888">Flux Capacitor</option>
+    <option value="fc2050">Power Laces</option>
+    <option value="fs1987">Time Circuits</option>
+    <option value="ac2000">Low Voltage Reactor</option>
+    <option value="jj1969">Warp Equalizer</option>
+</select>
+
+<fieldset>
+    <legend>Overall Rating</legend>
+
+    <label class="rating-option">
+        <input type="radio" name="rating" value="1" required>
+        1 ⭐
+    </label>
+
+    <label class="rating-option">
+        <input type="radio" name="rating" value="2">
+        2 ⭐⭐
+    </label>
+
+    <label class="rating-option">
+        <input type="radio" name="rating" value="3">
+        3 ⭐⭐⭐
+    </label>
+
+    <label class="rating-option">
+        <input type="radio" name="rating" value="4">
+        4 ⭐⭐⭐⭐
+    </label>
+
+    <label class="rating-option">
+        <input type="radio" name="rating" value="5">
+        5 ⭐⭐⭐⭐⭐
+    </label>
+
+</fieldset>
+
+<label for="installDate">Date of Installation</label>
+<input type="date" id="installDate" name="installDate" required>
+<!-- Useful Features -->
+<div class="form-group">
+    <label>Useful Features (Check all that apply)</label>
+
+    <div class="checkbox-group">
+        <label>
+            <input type="checkbox" name="features" value="Durability">
+            Durability
+        </label>
+
+        <label>
+            <input type="checkbox" name="features" value="Ease of Use">
+            Ease of Use
+        </label>
+
+        <label>
+            <input type="checkbox" name="features" value="Value">
+            Value
+        </label>
+
+        <label>
+            <input type="checkbox" name="features" value="Design">
+            Design
+        </label>
+
+        <label>
+            <input type="checkbox" name="features" value="Performance">
+            Performance
+        </label>
+    </div>
+</div>
+
+<!-- Written Review -->
+<div class="form-group">
+    <label for="review">Written Review</label>
+    <textarea
+        id="review"
+        name="review"
+        rows="5"
+        placeholder="Share your experience with this product...">
+    </textarea>
+</div>
+
+<!-- User Name -->
+<div class="form-group">
+    <label for="username">User Name</label>
+    <input
+        type="text"
+        id="username"
+        name="username"
+        placeholder="Enter your name">
+</div>
+
+<!-- Submit -->
+<input type="submit" value="Submit Review">
+</form>
+</main>
+
+<footer>
+    <p>&copy; <span id="year"></span> 🌍 Wanyama Edgar 🌍 Uganda</p>
+    <p><span id="lastModified"></span></p>
+</footer>
+
+</body>
+</html>
