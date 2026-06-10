@@ -20,7 +20,7 @@ body {
 
 header {
     background-color: var(--primary-color);
-    color: white;
+    color: #ffffff;
     padding: 1.5rem;
     text-align: center;
 }
@@ -52,7 +52,7 @@ nav {
 .navigation a {
     display: block;
     width: 100%;
-    color: white;
+    color: #ffffff;
     text-decoration: none;
     padding: 0.85rem 0.9rem;
     text-align: center;
@@ -61,7 +61,7 @@ nav {
 }
 
 .navigation a:hover {
-    background-color: #555;
+    background-color: #555555;
     color: #ffd700;
 }
 
@@ -73,7 +73,7 @@ main {
 }
 
 h2 {
-    border-bottom: 1px solid #ccc;
+    border-bottom: 1px solid #cccccc;
     padding-bottom: 10px;
     margin-bottom: 20px;
 }
