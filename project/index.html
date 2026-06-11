@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Uganda Travel Guide — discover the Pearl of Africa: mountain gorillas in Bwindi, Murchison Falls, Lake Victoria, and the Source of the Nile.">
+    <meta name="author" content="WDD 131 Student">
+    <meta name="theme-color" content="#2E7D32">
+    <title>Uganda Travel Guide | Pearl of Africa</title>
+    <link rel="stylesheet" href="styles/project.css">
+    <link rel="icon" href="images/logo.png" type="image/png">
+    <script src="../scripts/project.js" defer></script>
+</head>
+<body>
+    <header>
+        <div class="header-bar">
+            <a href="index.html" class="site-name">Uganda <span>Travel Guide</span></a>
+            <button id="menu-button" aria-label="Toggle navigation menu" aria-expanded="false">☰</button>
+        </div>
+        <nav>
+            <ul id="nav-list">
+                <li><a href="index.html" class="active" aria-current="page">Home</a></li>
+                <li><a href="attractions.html">Attractions</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="references.html">References</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero image: NOT lazy loaded (above the fold) -->
+    <div class="hero">
+        <img src="https://images.pexels.com/photos/17316642/pexels-photo-17316642.jpeg?auto=compress&cs=tinysrgb&fit=crop&h=627&w=1200"
+             alt="Sunrise over the misty green hills of Uganda"
+             width="1200" height="627" fetchpriority="high">
+        <div class="hero-text">
+            <h1>Discover Uganda</h1>
+            <p>The Pearl of Africa is waiting for you.</p>
+            <a href="attractions.html" class="btn">Explore Attractions</a>
+        </div>
+    </div>
+
+    <main>
+        <section class="intro">
+            <h2>Welcome to the Pearl of Africa</h2>
+            <p>Uganda is one of the most biodiverse countries on Earth. From the snow-capped Rwenzori Mountains to the vast savannas of Queen Elizabeth National Park, from the source of the world's longest river to misty rainforests sheltering mountain gorillas — Uganda offers adventures found nowhere else.</p>
+            <p>Winston Churchill called it the "Pearl of Africa" for good reason: its magnificent scenery, friendly people, and incredible wildlife make it an unforgettable destination.</p>
+        </section>
+
+        <section>
+            <h2>Why Visit Uganda?</h2>
+            <div class="why-grid">
+                <div class="why-card">
+                    <h3>🦍 Mountain Gorillas</h3>
+                    <p>Nearly half the world's remaining mountain gorillas live in Uganda's misty forests.</p>
+                </div>
+                <div class="why-card">
+                    <h3>🌊 Source of the Nile</h3>
+                    <p>Stand where the world's longest river begins its journey at Jinja.</p>
+                </div>
+                <div class="why-card">
+                    <h3>🦁 Big Game Safaris</h3>
+                    <p>Lions, elephants, hippos, and over 1,000 bird species across ten national parks.</p>
+                </div>
+                <div class="why-card">
+                    <h3>🌍 Warm Hospitality</h3>
+                    <p>Ugandans are renowned as some of the friendliest people in Africa.</p>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <h2>Featured Attractions</h2>
+            <!-- Cards inserted dynamically by displayFeatured() in project.js -->
+            <div class="card-grid" id="featured-grid"></div>
+        </section>
+    </main>
+
+    <footer>
+        <p>© <span id="current-year"></span> Wanyama Edgar | Uganda Travel Guide</p>
+        <p><a href="references.html">References</a></p>
+        <p id="last-modified"></p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Contact the Uganda Travel Guide team to plan your trip to the Pearl of Africa.">
+    <meta name="author" content="WDD 131 Student">
+    <meta name="theme-color" content="#2E7D32">
+    <title>Contact Us | Uganda Travel Guide</title>
+    <link rel="stylesheet" href="styles/project.css">
+    <link rel="icon" href="images/logo.png" type="image/png">
+    <script src="../scripts/project.js" defer></script>
+</head>
+<body>
+    <header>
+        <div class="header-bar">
+            <a href="index.html" class="site-name">Uganda <span>Travel Guide</span></a>
+            <button id="menu-button" aria-label="Toggle navigation menu" aria-expanded="false">☰</button>
+        </div>
+        <nav>
+            <ul id="nav-list">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="attractions.html">Attractions</a></li>
+                <li><a href="contact.html" class="active" aria-current="page">Contact</a></li>
+                <li><a href="references.html">References</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <h2>Plan Your Uganda Adventure</h2>
+
+            <!-- Shown by greetVisitor() if localStorage has a saved name -->
+            <p class="welcome-back" id="welcome-back" style="display: none;"></p>
+
+            <p>Tell us where you'd like to go and we'll help you plan the perfect trip. Fields marked * are required.</p>
+
+            <form id="contact-form" novalidate>
+                <label for="name">Name *</label>
+                <input type="text" id="name" name="name" placeholder="Your full name" required>
+
+                <label for="email">Email *</label>
+                <input type="email" id="email" name="email" placeholder="you@example.com" required>
+
+                <label for="destination">Destination of Interest *</label>
+                <select id="destination" name="destination" required>
+                    <option value="">-- Choose a destination --</option>
+                    <option value="Bwindi Impenetrable Forest">Bwindi Impenetrable Forest</option>
+                    <option value="Murchison Falls">Murchison Falls</option>
+                    <option value="Lake Victoria">Lake Victoria</option>
+                    <option value="Queen Elizabeth National Park">Queen Elizabeth National Park</option>
+                    <option value="Source of the Nile">Source of the Nile</option>
+                </select>
+
+                <label for="message">Message</label>
+                <textarea id="message" name="message" rows="5" placeholder="Tell us about your dream trip..."></textarea>
+
+                <button type="submit" class="btn">Send Enquiry</button>
+
+                <p class="form-message" id="form-message" aria-live="polite"></p>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>© <span id="current-year"></span> Wanyama Edgar | Uganda Travel Guide</p>
+        <p><a href="references.html">References</a></p>
+        <p id="last-modified"></p>
+    </footer>
+</body>
+</html>

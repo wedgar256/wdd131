@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Top attractions in Uganda: Bwindi Impenetrable Forest, Murchison Falls, Lake Victoria, Queen Elizabeth National Park, and the Source of the Nile.">
+    <meta name="author" content="WDD 131 Student">
+    <meta name="theme-color" content="#2E7D32">
+    <title>Attractions | Uganda Travel Guide</title>
+    <link rel="stylesheet" href="styles/project.css">
+    <link rel="icon" href="images/logo.png" type="image/png">
+    <script src="../scripts/project.js" defer></script>
+</head>
+<body>
+    <header>
+        <div class="header-bar">
+            <a href="index.html" class="site-name">Uganda <span>Travel Guide</span></a>
+            <button id="menu-button" aria-label="Toggle navigation menu" aria-expanded="false">☰</button>
+        </div>
+        <nav>
+            <ul id="nav-list">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="attractions.html" class="active" aria-current="page">Attractions</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="references.html">References</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <h2>Top Attractions in Uganda</h2>
+            <p>From rainforest gorilla treks to thundering waterfalls, here are the destinations every visitor to Uganda should experience.</p>
+
+            <!-- Filter buttons wired up by setupFilters() -->
+            <div class="filters" role="group" aria-label="Filter attractions">
+                <button data-filter="all" class="active">All</button>
+                <button data-filter="wildlife">Wildlife</button>
+                <button data-filter="water">Lakes &amp; Rivers</button>
+            </div>
+
+            <!-- Cards inserted dynamically by displayAttractions() in project.js -->
+            <div class="card-grid" id="attractions-grid"></div>
+        </section>
+
+        <section>
+            <!-- Filled by displaySpotlight() using attractions.find() -->
+            <div class="spotlight" id="spotlight"></div>
+        </section>
+    </main>
+
+    <footer>
+        <p>© <span id="current-year"></span> Uganda Travel Guide | WDD 131 Final Project</p>
+        <p><a href="references.html">References</a></p>
+        <p id="last-modified"></p>
+    </footer>
+</body>
+</html>
